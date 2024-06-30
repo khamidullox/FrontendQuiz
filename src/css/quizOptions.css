@@ -1,0 +1,106 @@
+.main__option__answer {
+  background-color: var(--light-grey);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.main__answer__submit {
+  padding: 28px;
+  background-color: var(--purplr);
+  width: 100%;
+  border-radius: 24px;
+  color: var(--white);
+  cursor: pointer;
+}
+.main__answer__submit:hover {
+  opacity: 0.7;
+}
+button.main__open__quiz__btn:focus {
+  border-color: var(--purplr);
+  border: 3px solid var(--purplr);
+}
+.main__option__rigth__asw {
+  border: 3px solid var(--green);
+
+  &::after {
+    content: "✔";
+    font-size: 25px;
+    position: absolute;
+    right: 16px;
+    align-items: center;
+    padding: 5px 10px;
+
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+  }
+  span {
+    background-color: var(--green);
+    color: var(--white);
+  }
+}
+.main__option__no__asw {
+  border: 3px solid var(--red);
+
+  &::after {
+    content: "✖";
+    font-size: 25px;
+    position: absolute;
+    right: 16px;
+    /* align-items: end; */
+    padding: 5px 10px;
+
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    color: var(--red);
+  }
+  span {
+    background-color: var(--red);
+    color: var(--white);
+  }
+}
+.main__quiz__error {
+  color: var(--red);
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  &::before {
+    content: "✖";
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    padding: 1px 5px;
+    margin-right: 10px;
+  }
+}
+.main__finish__counter__title {
+  background-color: var(--white);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.main__finish__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  figure {
+    padding: 10px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+.main__finish__out {
+  font-size: 20px;
+  color: var(--grey-navy);
+}

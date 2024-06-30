@@ -1,0 +1,146 @@
+/* rubik-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/rubik-v28-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/rubik-v28-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v28-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  font-style: normal;
+  color: var(--dark-navy);
+  background-color: var(--light-grey);
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+  line-height: 100%;
+}
+h1 {
+  /* Display */
+  font-size: 144px;
+}
+h2 {
+  /* Heading L (Bold) */
+  font-size: 64px;
+}
+h3 {
+  /* Heading L (Regular) */
+  font-weight: 300;
+  font-size: 64px;
+}
+h4 {
+  /* Heading M */
+  font-size: 36px;
+}
+h5 {
+  /* Heading S */
+  font-size: 28px;
+}
+h6 {
+  font-weight: 100;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 150%;
+}
+#root {
+  width: 100%;
+  max-width: 115.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 135px;
+  /* padding-right: 135px; */
+  padding: 10px 135px;
+  /* padding-top: 0; */
+  background-image: url("/public/assets/pattern-background-desktop-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.main {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+@media only screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #root {
+    width: 100%;
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 135px;
+    /* padding-right: 135px; */
+    padding: 25px 50px;
+  }
+}
